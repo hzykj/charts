@@ -1,0 +1,10 @@
+image:
+  pullPolicy: IfNotPresent
+  repository: syncthing/syncthing
+  tag: 1.20.2
+cpu:
+  limit: 100
+  requested: 40
+memory:
+  limit: 10
+  requested: 5
