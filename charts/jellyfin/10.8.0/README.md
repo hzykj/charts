@@ -1,4 +1,4 @@
-# Emby Server helm chart
+# Jellyfin Server helm chart
 
 ## Configuration
 
