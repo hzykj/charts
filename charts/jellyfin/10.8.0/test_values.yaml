@@ -1,0 +1,35 @@
+appVolumeMounts:
+  config:
+    emptyDir: true
+    mountPath: /config
+  data:
+    emptyDir: true
+    mountPath: /data
+  shared:
+    emptyDir: true
+    mountPath: shared
+  shared-logs:
+    emptyDir: true
+    mountPath: /config/Library/Application Support/Jellyfin Media Server/Logs
+  transcode:
+    emptyDir: true
+    mountPath: /transcode
+dnsConfig:
+  options: []
+emptyDirVolumes: true
+enableJellyfinPass: false
+environmentVariables: []
+extraAppVolumeMounts:
+- hostPath: /mnt/extras/hello
+  mountPath: /mnt/extras
+  readOnly: true
+gpuConfiguration: {}
+hostNetwork: false
+image:
+  pullPolicy: IfNotPresent
+  repository: linuxserver/jellyfin
+  tag: 10.8.0
+JellyfinServiceTCP:
+  port: 8080
+timezone: Europe/London
+updateStrategy: Recreate
