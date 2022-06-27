@@ -1,0 +1,16 @@
+apiVersion: v2
+appVersion: 10.8.0
+dependencies: Jellyfin is the volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached. Your media, your server, your way.
+- name: common
+  repository: file://../../../library/common/2112.0.0
+  version: 2112.0.0
+description: Jellyfin Server
+home: https://jellyfin.org/
+icon: https://raw.githubusercontent.com/jellyfin/jellyfin/master/Emby.Dlna/Images/logo240.png
+keywords:
+- Jellyfin
+- media
+name: Jellyfin
+sources:
+- linuxserver/jellyfin
+version: 10.8.0
